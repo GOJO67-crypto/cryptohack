@@ -1,1 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Snake Game</h1>
+    <div class="controls">
+      <button id="btn-start">Start</button>
+      <button id="btn-pause">Pause</button>
+      <span id="score">Score: 0</span>
+    </div>
+  </header>
 
+  <main class="game-wrap">
+    <canvas id="game" width="400" height="400"></canvas>
+    <div id="overlay" class="overlay hidden">
+      <div class="panel">
+        <h2>Paused</h2>
+        <button id="btn-resume">Resume</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Your Name • Snake Game</p>
+  </footer>
+
+  <script type="module" src="src/game.js"></script>
+</body>
+</html>
